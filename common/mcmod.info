@@ -1,0 +1,20 @@
+[
+{
+	"modid" : "ThermalDynamics",
+	"name"  : "Thermal Dynamics",
+	"description" : "Its hot, then its cold, then its hot, then its cold!",
+	"version" : "0.0.1",
+	"url" : "",
+	"updateURL" : "",
+	"authorList" : [
+	"Tatsu011" 
+	],
+	"credits" : "by Tatsu011, inspired by various hot and cold things... and Pahimar",
+	"logoFile" : "",
+	"screenshots" : [
+	], 
+	"parent" : "",
+	"dependancies" : [
+	]
+}
+]
