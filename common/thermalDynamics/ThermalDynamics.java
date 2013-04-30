@@ -1,6 +1,8 @@
 package thermalDynamics;
 
-import thermalDynamics.lib.refrences;
+import thermalDynamics.lib.*;
+import thermalDynamics.block.Blocks;
+import thermalDynamics.item.Items;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.*;
 import cpw.mods.fml.common.event.*;
@@ -12,13 +14,15 @@ public class ThermalDynamics
     @PreInit
     public void preInit(FMLPreInitializationEvent event)
     {
-        
+       //registers the blocks and items
+        Blocks.LoadBlocks();
+        Items.RegisterItems();
     }
     
     @Init
     public void Load(FMLInitializationEvent event)
     {
-        
+        Recipies.registerRecipies();
     }
     
     @PostInit
