@@ -1,4 +1,4 @@
-package thermalDynamics;
+package thermalDynamics.crafting;
 
 
 import thermalDynamics.block.*;
@@ -14,7 +14,7 @@ public class Recipies
     {
         
         //shapeless Recipes
-        GameRegistry.addShapelessRecipe(new ItemStack(Items.SoftWire), new Object[]
+        GameRegistry.addShapelessRecipe(new ItemStack(Items.SoftWire, 16), new Object[]
                 {new ItemStack(Items.Ulu), new ItemStack(Block.blockRedstone) });
         GameRegistry.addShapelessRecipe(new ItemStack(Blocks.ColdBrick), new Object[]
                 {new ItemStack(Block.stoneBrick), new ItemStack(Item.snowball)});
@@ -24,7 +24,7 @@ public class Recipies
                 {
                     "ABA",
                     " A ",
-                    'A', Item.goldNugget, 
+                    'A', Item.ingotIron, 
                     'B', Block.woodenButton
                 });
         

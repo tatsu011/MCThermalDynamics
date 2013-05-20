@@ -2,7 +2,9 @@ package thermalDynamics;
 
 import thermalDynamics.lib.*;
 import thermalDynamics.block.Blocks;
+import thermalDynamics.crafting.Recipies;
 import thermalDynamics.item.Items;
+import thermalDynamics.client.renderer.tileEntity.*;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.*;
 import cpw.mods.fml.common.event.*;
@@ -22,7 +24,12 @@ public class ThermalDynamics
     @Init
     public void Load(FMLInitializationEvent event)
     {
+        //Registers the Recipies
         Recipies.registerRecipies();
+        
+        //Registers the Tile entities
+        TileEntities.RegisterTileEntities();
+        
     }
     
     @PostInit

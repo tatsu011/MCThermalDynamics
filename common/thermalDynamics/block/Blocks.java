@@ -10,6 +10,7 @@ import thermalDynamics.lib.*;
 public class Blocks
 {
     public static Block ColdBrick;
+    public static Block CookingPot;
     
     public static void LoadBlocks()
     {
